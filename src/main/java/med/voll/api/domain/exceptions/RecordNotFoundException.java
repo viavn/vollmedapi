@@ -1,4 +1,4 @@
-package med.voll.api.exceptions;
+package med.voll.api.domain.exceptions;
 
 public class RecordNotFoundException extends RuntimeException {
     public RecordNotFoundException(Long id) {

@@ -1,4 +1,4 @@
-package med.voll.api.dtos;
+package med.voll.api.domain.dtos;
 
 public record DadosAtualizacaoMedico(
         String nome,

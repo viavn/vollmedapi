@@ -1,4 +1,4 @@
-package med.voll.api.controllers;
+package med.voll.api.application.controllers;
 
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
@@ -10,13 +10,13 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import med.voll.api.dtos.DadosAtualizacaoPaciente;
-import med.voll.api.dtos.DadosCadastroPaciente;
-import med.voll.api.dtos.DadosDetalhamentoPaciente;
-import med.voll.api.dtos.DadosListagemPaciente;
-import med.voll.api.entities.Paciente;
-import med.voll.api.exceptions.RecordNotFoundException;
-import med.voll.api.repositories.PacienteRepository;
+import med.voll.api.domain.dtos.DadosAtualizacaoPaciente;
+import med.voll.api.domain.dtos.DadosCadastroPaciente;
+import med.voll.api.domain.dtos.DadosDetalhamentoPaciente;
+import med.voll.api.domain.dtos.DadosListagemPaciente;
+import med.voll.api.domain.entities.Paciente;
+import med.voll.api.domain.exceptions.RecordNotFoundException;
+import med.voll.api.domain.repositories.PacienteRepository;
 
 @RestController
 @RequestMapping("v1/api/pacientes")
